@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Arapey&family=Mea+Culpa&family=Old+Standard+TT&display=swap');
+body {
+  background-color: maroon;
+  color: #e6e6fa;
+  font-family: "Arapey";
+  font-size: 12px;
+}
+
+h1, h2, h3 {
+    font-family: "Old Standard TT";
+    color: goldenrod;
+}
+#title {
+  font-family: "Mea Culpa";
+  font-size: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#main {
+    padding: 1vw;
+    font-size: 1.5em;
+    background-color: rgba(10,10,10, 0.3);
+    border-radius: 25px;
+}
+#img-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Old Standard TT";
+  height: 70vh;
+  
+}
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+#image {
+  display: block;
+  max-width: 100%;
+  border: 3px solid white;
+  border-radius: 50%;
+  height: auto;
+  box-shadow: 3px 3px 10px 10px rgba(10,10,10, 0.3);
+}
+
+#img-caption {
+  text-align: center;
+}
+
+#tribute-info {
+    display: flex;
+    flex-direction: column;
+    max-width: 50vw;
+    margin: auto;
+}
