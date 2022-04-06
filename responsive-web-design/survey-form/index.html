@@ -1,0 +1,89 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Factory_icon.svg"
+                alt="An icon of a factory" />
+            <h1 id="title">Bro Inc. Survey Form</h1>
+            <p id="description">Thank you for participating in our survey.</p>
+                 </header>
+        <form id="survey-form" action="">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter Name" required />
+                <label for="email" id="email-label">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter Email" class="form-control" required />
+                <label for="age" id="number-label" type="number" >Age (optional)</label>
+                <input type="number" name="age" placeholder="Enter age" min="1" max="100" id="age" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label for="test">Select Role:</label>
+                <select name="test" id="dropdown" class="form-control">
+                    <option disabled selected value="test">Select a role</option>
+                    <option value="test">Role 1</option>
+                    <option value="test">Role 2</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Please Select an Option:</p>
+                <label>
+                    <input type="radio" name="radio-test" id="radio-test" value="Test Value"
+                        class="form-control" checked>Hello</input>
+                </label>
+                <label>
+                    <input type="radio" name="radio-test" id="radio-test" value="Test Value"
+                        class="form-control">Hello</input>
+                </label>
+                <label>
+                    <input type="radio" name="radio-test" id="radio-test" value="Test Value"
+                        class="form-control">Hello</input>
+                </label>
+                <label>
+                    <input type="radio" name="radio-test" id="radio-test" value="Test Value"
+                        class="form-control">Hello</input>
+                </label>
+                <label>
+                    <input type="radio" name="radio-test" id="radio-test" value="Test Value"
+                        class="form-control">Hello</input>
+                </label>
+
+            </div>
+            <div class="form-group">
+                <p>Please check the following that apply.</p>
+                <label>
+                    <input type="checkbox" name="test" id="test" value="test1">Test</input>
+                </label>
+                <label>
+                    <input type="checkbox" name="test" id="test" value="test1">Test</input>
+                </label>
+                <label>
+                    <input type="checkbox" name="test" id="test" value="test1">Test</input>
+                </label>
+                <label>
+                    <input type="checkbox" name="test" id="test" value="test1">Test</input>
+                </label>
+                <label>
+                    <input type="checkbox" name="test" id="test" value="test1">Test</input>
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="comments">Suggestions/additional comments:
+                </label>
+                <textarea name="comments" id="comments" cols="30" rows="100" class="form-control"></textarea>
+                <input type="submit" id="submit" value="Submit" class="form-control submit-button" />
+            </div>
+            
+        </form>
+    </div>
+</body>
+
+</html>

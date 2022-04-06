@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Patua+One&family=Raleway&family=Roboto&display=swap');
+:root {
+    --white: #FAFBFA;
+    --dark-slate-gray: #3b3b46;
+    --light-slate-gray: #a5b3c0;
+    --tan: #d3c99f;
+    --dark-khaki: #B5A25d;
+}
+body {
+    background-color: var(--light-slate-gray);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#logo {
+    max-width: 150px;
+    max-height: 150px;
+    float: left;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--tan);
+    border-radius: 10px;
+    box-shadow: -10px 10px  var(--dark-slate-gray);
+    
+    /*box-shadow: -5px 5px 10px 10px var(--dark-slate-gray), 1px 1px 100px 3px var(--dark-slate-gray);*/
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: linear-gradient(var(--white) 25%, var(--tan) 25% 50%,  var(--dark-khaki) 50% 75%, var(--dark-slate-gray) 66% 99%);
+    color: var(--white);
+    padding: 3%;
+    max-width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+
+
+header h1 {
+    font-family: 'Patua One', serif;
+    font-size: 2.5em;
+    text-shadow: -3px 5px  var(--dark-slate-gray);
+}
+#description {
+    margin: 0;
+}
+
+#survey-form {   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--dark-slate-gray);
+    font-family: "Roboto", sans-serif;
+    padding: 3%;
+    max-width: 800px;
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+.form-control {
+    display: inline-block;
+    background-color: var(--light-slate-gray);
+    width: 85%;
+    border: 3px solid var(--dark-slate-gray);
+    margin: 7% 0%;
+    height: 2.5rem;
+}
+.form-control textarea {
+    height: 100px;
+    font-family: "Roboto", sans-serif;
+}
+
+.submit-button {
+    width: 35%;
+}
